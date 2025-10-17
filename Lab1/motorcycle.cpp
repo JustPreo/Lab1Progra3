@@ -10,7 +10,6 @@ void Motorcycle::simulateHour(){
     if (fuelLevel_ == 0)
     {
         return;
-
     }
     fuelLevel_ -= 4;
 

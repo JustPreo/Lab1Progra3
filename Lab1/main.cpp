@@ -1,5 +1,7 @@
 #include "car.h"
 #include "drone.h"
+#include "motorcycle.h"
+#include "truck.h"
 #include "vehicle.h"
 #include <QCoreApplication>
 #include <iostream>
@@ -12,6 +14,8 @@ int main(int argc, char *argv[])
     vector<Vehicle*> vehicles;
     //Agregar los vehiculos ahi
     vehicles.push_back(new Car("Toyota Camry 2010",100));
+    vehicles.push_back(new Motorcycle("Mazda BT-50",100));
+    vehicles.push_back(new Truck("Toyota Hilux 2019",100));
     vehicles.push_back(new Drone("DJI Mini 3",100));//No importa reallmente el 100
 
     //Doble for para recorrer horas y recorrer array
